@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 16px;
+  height: 16px;
+  background-color: #1d1d1d;
+  margin: 2px;
+  box-shadow: 0 0 2px #000;
+  transition: 2s ease;
+}
+
+.square:hover {
+  transition-duration: 0s;
+  transform: scale(1.2);
+}
+
+.form {
+  position: absolute;
+  top: 20%;
+  right: 20%;
+  transform: translate(20%, -50%);
+  background-color: red;
+  width: 200px;
+  display: flex;
+}
+
+input[type="text"] {
+  border: 1px solid #cccccc; //цвет рамки
+  border-radius: 3px; //закругление углов (общее)
+  -webkit-border-radius: 3px; //закругление углов (Google Chrome)
+  -moz-border-radius: 3px; //закругление углов (FireFox)
+  -khtml-border-radius: 3px; //закругление углов (Safari)
+  background: #ffffff !important; // желательно прописывать, так как в Chrome при сохранных данных оно может быть желтым
+  outline: none; // удаляет обводку в браузерах хром(желтая) и сафари(синяя)
+  height: 24px; // высота на свое усмотрение
+  width: 120px; // ширина на свое усмотрение
+  color: #cccccc; //цвет шрифта в обычном состоянии
+  font-size: 11px; // Размер шрифта
+  font-family: Tahoma; // Стиль шрифта
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  margin: 10px 20px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background-image: linear-gradient(to right, #9eefe1 0%, #4830f0 51%, #9eefe1 100%);
+  background-size: 200% auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-position: right center;
+}
